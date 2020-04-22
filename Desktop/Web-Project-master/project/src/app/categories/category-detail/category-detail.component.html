@@ -1,0 +1,6 @@
+<div class="category-detail" *ngIf="this.products$ | async as products">
+    <div class="container">
+        <h2>{{ products[0].category }}</h2>
+    </div>
+    <app-products [products]="products"></app-products>
+</div>
